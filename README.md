@@ -1,12 +1,8 @@
-# 极客时间专栏学习之旅
+# A2A Demo
 
-[👉 点击进入专栏介绍页](https://time.geekbang.org/column/intro/101053801)
+![示意图](./pics/Demo示意图.png)
 
----
-
-本专栏自上线两周以来，已有近3000位同学加入学习之旅。欢迎你一同开启知识探索之门！
-
-![极客时间](pics/极客时间.png)
+在这个基于 A2A 协议的智能体平台中，用户在浏览器端发出指令后，前端会将该请求传给 Host Agent，由它负责解析用户意图、拆解具体子任务，并且并行触发多个 Remote Agent；每个 Remote Agent 通过 A2A Client 将子任务封装为标准的 JSON-RPC 请求，发送给远端对应的 A2A Server，再由后者调用各自擅长的智能体模块（如 LangGraph Agent 负责外汇兑换、Google ADK Agent 负责报销收据、Crew AI Agent 负责根据文字内容来生成图片等）执行并返回结果；最后，Host Agent 汇总并格式化各路反馈，一并呈现给用户，实现多智能体的分工协作与能力互补。
 
 # Sample Code
 
