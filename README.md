@@ -6,21 +6,20 @@
 
 # Sample Code
 
-This code is used to demonstrate A2A capabilities as the spec progresses.\ Samples are divided into 3 sub directories:
-
-* [**Common**](/samples/python/common)  
-Common code that all sample agents and apps use to speak A2A over HTTP. 
-
-* [**Agents**](/samples/python/agents/README.md)  
-Sample agents written in multiple frameworks that perform example tasks with tools. These all use the common A2AServer.
-
-* [**Hosts**](/samples/python/hosts/README.md)  
-Host applications that use the A2AClient. Includes a CLI which shows simple task completion with a single agent, a mesop web application that can speak to multiple agents, and an orchestrator agent that delegates tasks to one of multiple remote A2A agents.
+- agents目录：包含一系列 A2A Agents 示例。
+- Demo目录：是要演示的协议实战示例。
+- Common目录：Common code that all sample agents and apps use to speak A2A over HTTP. 
+- Hosts目录：Host applications that use the A2AClient. Includes a CLI which shows simple task completion with a single agent, a mesop web application that can speak to multiple agents, and an orchestrator agent that delegates tasks to one of multiple remote A2A agents.
 
 ## Prerequisites
-
 - Python 3.13 or higher
 - [UV](https://docs.astral.sh/uv/)
+
+在根目录创建 .env 文件，写入GOOGLE_API_KEY:
+```
+GOOGLE_API_KEY=<your_google_api_key>
+```
+Google_API_Key[申请地址](https://cloud.google.com/docs/authentication/api-keys?hl=zh-cn)
 
 ## Running the Samples
 
