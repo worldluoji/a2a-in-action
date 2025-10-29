@@ -47,3 +47,6 @@ The following example will run the langgraph agent with the python CLI host:
 **NOTE:** 
 This is sample code and not production-quality libraries.
 ---
+
+## issue
+https://github.com/huangjia2019/a2a-in-action/issues/1
